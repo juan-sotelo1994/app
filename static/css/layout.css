@@ -18,3 +18,19 @@ body {
 .navbar-nav .nav-item.active .nav-link {
     color: #007bff; /* Color del enlace activo */
 }
+
+/* Estilo para el formulario de inicio de sesión */
+.login-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Estilo para los campos de entrada del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.btn-primary {
+    width: 100%;
+}
