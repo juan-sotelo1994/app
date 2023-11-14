@@ -1,3 +1,20 @@
+/* Estilo general para el body */
 body {
-    background-color: peru;
+    padding-top: 56px; /* Ajuste para evitar que el contenido esté detrás de la barra de navegación */
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #343a40; /* Color de fondo */
+}
+
+/* Estilo para el texto en la barra de navegación */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilo para el enlace activo en la barra de navegación */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Color del enlace activo */
 }
