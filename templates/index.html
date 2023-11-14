@@ -1,17 +1,8 @@
-{% extends './layout.html' %}
+{% extends 'layout.html' %}
 
-<title>{% block title %} {{ data.titulo}} {% endblock %}</title>
+{% block title %}Home{% endblock %}
 
-{% block body%}
-
-<h1>{{ data.bienvenida }}</h1>
-    {% if data.numero_recursos > 0 %}
-    <ul>
-        {% for c in data.recursos %}
-        <li>{{ c }}</li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <h2>No existen recursos jodete</h2>
-    {% endif %}
+{% block content %}
+<h1>Bienvenido a la Página de Inicio</h1>
+<p>Seleccione una opción:</p>
 {% endblock %}
