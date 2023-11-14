@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import os
 
 app = Flask(__name__)
@@ -22,6 +22,20 @@ def index():
 @app.route('/reservas')
 def reservas():
     return render_template('reservas.html')
+
+@app.route('/registro', methods=['GET', 'POST'])
+def registro():
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        apellido = request.form['apellido']
+        tipo_documento = request.form['tipo_documento']
+        numero_documento = request.form['numero_documento']
+        correo = request.form['correo']
+        password = request.form['password']
+        # Agrega lógica de almacenamiento de usuarios (puedes personalizar esto)
+        return redirect(url_for('index'))
+    return render_template('registro.html')
+
 
 @app.route('/novedades')
 def novedades():
