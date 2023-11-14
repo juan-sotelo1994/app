@@ -1,0 +1,17 @@
+{% extends './layout.html' %}
+
+<title>{% block title %} {{ data.titulo}} {% endblock %}</title>
+
+{% block body%}
+
+<h1>{{ data.bienvenida }}</h1>
+    {% if data.numero_recursos > 0 %}
+    <ul>
+        {% for c in data.recursos %}
+        <li>{{ c }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h2>No existen recursos jodete</h2>
+    {% endif %}
+{% endblock %}
