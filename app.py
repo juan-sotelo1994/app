@@ -23,6 +23,9 @@ def index():
 def reservas():
     return render_template('reservas.html')
 
+
+
+
 @app.route('/registro', methods=['GET', 'POST'])
 def registro():
     if request.method == 'POST':
