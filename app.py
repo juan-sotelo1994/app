@@ -44,15 +44,26 @@ def registro():
 def novedades():
     return render_template('novedades.html')
 
+
+def verificar_credenciales(email, password):
+    # Aquí verificarías las credenciales (por ejemplo, con una base de datos)
+    return email == 'ing.davidsotelo19@gmail.com' and password == '123456'
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        # Aquí puedes agregar la lógica de autenticación con el correo y la contraseña
-        # Por ahora, redirigimos a la página de inicio después del "login"
+        if verificar_credenciales(email, password):
+            # Si las credenciales son correctas, redirigir al dashboard
+            return redirect(url_for('dashboard'))
         return redirect(url_for('index'))
     return render_template('login.html')
+
+@app.route('/dashboard')
+def dashboard():
+    # Aquí iría la lógica de tu página de dashboard
+    return render_template('dashboard.html')
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 8081, debug=True)
