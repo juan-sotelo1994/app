@@ -35,5 +35,18 @@ body {
     width: 100%;
 }
 
+.container .registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para que ocupe toda la altura visible */
+    margin-left: 50px;
+}
+
+/* Estilos específicos para el div del formulario */
+.bg-danger {
+    /* Cambia el color de fondo a rojo */
+    background-color: #dc3545;
+}
 
 
