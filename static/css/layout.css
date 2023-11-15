@@ -46,7 +46,7 @@ body {
 /* Estilos específicos para el div del formulario */
 .bg-danger {
     /* Cambia el color de fondo a rojo */
-    background-color: #000000; /* Cambia el color de fondo a rojo */
+    background-color: #ffffff; /* Cambia el color de fondo a rojo */
     max-width: 800px; /* Cambia el ancho máximo del contenedor */
     margin: 600px; /* Centra horizontalmente el contenedor */
     margin-left: 200px;
