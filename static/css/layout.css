@@ -5,11 +5,20 @@ body {
 
 /* Estilo para la barra de navegación */
 .navbar {
-    background-color: #343a40; /* Color de fondo */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    border-radius: 5px;
 }
 
+
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -53,10 +62,6 @@ section {
     color: #ffffff; /* Color del texto */
 }
 
-/* Estilo para el enlace activo en la barra de navegación */
-.navbar-nav .nav-item.active .nav-link {
-    color: #007bff; /* Color del enlace activo */
-}
 
 /* Estilo para el formulario de inicio de sesión */
 .login-form {
