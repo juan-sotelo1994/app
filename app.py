@@ -7,7 +7,7 @@ def index():
     #return "si funciono"
     #recursos =['PHP','PYTHON','JAVA', 'DART']
     #data = {
-     #   'titulo':'gil',
+     #   'titulo':'kajsnd',
      #   'bienvenida':'!saludos!',
     #  'recursos':recursos,
      #   'numero_recursos': len(recursos)
@@ -21,8 +21,6 @@ def index():
 @app.route('/reservas')
 def reservas():
     return render_template('reservas.html')
-
-
 
 
 @app.route('/registro', methods=['GET', 'POST'])
@@ -63,6 +61,10 @@ def login():
 def dashboard():
     # Aquí iría la lógica de tu página de dashboard
     return render_template('dashboard.html')
+
+@app.route('/Habidisponible')
+def Habidisponible():
+    return render_template('Habidisponible.html')
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 8081, debug=True)
