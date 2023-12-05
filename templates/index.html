@@ -8,44 +8,76 @@
   <h1>Bienvenidos al Hotel el Redil</h1><br>
 </div>
 
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="100">
-        <img src="{{ url_for('static', filename='imagen1.jpeg') }}" class="d-block w-100" alt="imagen1">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        color: #495057;
+    }
+
+    .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1, h2 {
+        color: #007bff;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Sobre Nosotros</h1>
+
+    <section>
+        <h2>Descripción del Hotel</h2>
+        <p>¡Bienvenido al Hotel El Redil! Somos un hotel boutique que ofrece experiencias de alojamiento únicas y confortables. Nuestro hotel está ubicado en un entorno tranquilo y encantador, perfecto para aquellos que buscan relajarse y disfrutar de la hospitalidad excepcional.</p>
+    </section>
+
+    <section>
+        <h2>Misión</h2>
+        <p>Proporcionar a nuestros huéspedes una estancia inolvidable, ofreciendo servicios de alta calidad, comodidades excepcionales y atención personalizada. Nos esforzamos por crear un ambiente acogedor donde cada huésped se sienta como en casa.</p>
+    </section>
+
+    <section>
+        <h2>Visión</h2>
+        <p>Convertirnos en el destino preferido para quienes buscan experiencias de alojamiento excepcionales. Buscamos constantemente mejorar nuestros servicios, expandir nuestras instalaciones y ser reconocidos por la excelencia en la industria hotelera.</p>
+    </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eNq8iqEAB5mzqc0GNEUjFuZJpTsUlvjs/J9aR5aFURqUto8JNt6l9b6f5KlVaGMr" crossorigin="anonymous"></script>
+<!-- Otros scripts o enlaces a archivos JS si es necesario -->
+
+<div class="container text-center mt-4">
+  <div class="row">
+      <!-- Cuadro del Mapa -->
+      <div class="col-md-8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.400725184001!2d-77.6339441!3d0.8289772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e296b51458a25d3%3A0x6565fc0ff475254!2sHotel%20El%20Redil!5e0!3m2!1ses-419!2sco!4v1701734987075!5m2!1ses-419!2sco"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
       </div>
-      <div class="carousel-item " data-bs-interval="200">
-        <img src="{{ url_for('static', filename='imagen2.jpeg') }}" class="d-block w-100" alt="imagen2">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
+
+      <!-- Cuadro de Información -->
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Información del Hotel</h5>
+                  <p class="card-text">Aquí puedes agregar información sobre el Hotel El Redil. Puedes incluir detalles como la dirección, servicios, etc.</p>
+              </div>
+          </div>
       </div>
-      <div class="carousel-item ">
-        <img src="{{ url_for('static', filename='imagen3.jpeg') }}" class="d-block w-100" alt="imagen3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+</div>
+
+
   <section class="page-section" id="contact">
     <div class="container">
         <div class="text-center">
@@ -82,9 +114,4 @@
     </div>
     <button type="button" class="btn btn-primary">Enviar</button><br>
 
-    <!-- Footer-->
-<br><footer class="py-5 bg-dark">
-  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-</footer>
-    
 {% endblock %}
