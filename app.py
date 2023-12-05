@@ -1,6 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
+import os, mysql.connector
 
-import os
+
+
+db_config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': ' ',
+    'database': 'hotel',
+}
+
 
 app = Flask(__name__)
 @app.route('/')
@@ -57,6 +66,32 @@ def login():
             return redirect(url_for('dashboard'))
         return redirect(url_for('index'))
     return render_template('login.html')
+
+
+#@app.route('/login', methods=['GET', 'POST'])
+#def login():
+ #   if request.method == 'POST':
+  #      email = request.form['email']
+   #     password = request.form['password']
+   #     
+   #     if verificar_credenciales(email, password):
+   #         # Si las credenciales son correctas, redirigir al dashboard
+   #         return redirect(url_for('dashboard'))
+   #     # Si las credenciales son incorrectas, redirigir al inicio de sesión nuevamente
+   #     return redirect(url_for('index'))
+    
+ 
+ #   return render_template('login.html')
+
+
+
+#@app.route('/dashboard')
+#def dashboard():
+ #   # Lógica para mostrar el dashboard
+  #  return render_template('dashboard.html')
+
+
+
 
 @app.route('/dashboard')
 def dashboard():
