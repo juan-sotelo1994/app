@@ -1,0 +1,38 @@
+{% extends 'layoutdas.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <!-- Menú lateral -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Opción 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Opción 2
+                            </a>
+                        </li>
+                        <!-- Agrega más opciones de menú aquí -->
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-center mt-5">
+                    <!-- Botones centrales -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-lg">Botón 1</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Botón 2</button>
+                        <button type="button" class="btn btn-success btn-lg">Botón 3</button>
+                        <button type="button" class="btn btn-danger btn-lg">Botón 4</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+{% endblock %}
