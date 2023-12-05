@@ -8,6 +8,46 @@ body {
     background-color: #343a40; /* Color de fondo */
 }
 
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.services-list-item:hover {
+  background-color: #f5c6cb;
+}
+
+.services-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
 /* Estilo para el texto en la barra de navegación */
 .navbar-brand,
 .navbar-nav .nav-link {
