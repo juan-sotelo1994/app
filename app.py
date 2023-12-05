@@ -78,7 +78,7 @@ db_config = {
 }
 
 # Crear una conexión a la base de datos
-conexion = mysql.connector.connect(laravel_config)
+conexion = mysql.connector.connect(**db_config)
 
 # Verificar si la conexión fue exitosa
 if conexion.is_connected():
